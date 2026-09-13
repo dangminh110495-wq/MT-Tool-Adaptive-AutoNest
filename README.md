@@ -36,16 +36,17 @@ The goal is to improve irregular 2D sheet-metal nesting so the solver keeps gene
 
 ## Important files
 
-- `adaptive-autonest-t50-review-excerpt.js` — focused review excerpt from the T50 Auto Nest implementation (not standalone).
+- `src/quality-objective.js` — actual T50 quality/scoring comparator excerpt.
+- `src/champion-retention.js` — actual validated best-so-far persistence / safe-partial excerpt.
 - `docs/CODEMAP.md` — map of the important functions/areas in the original T50 source.
 - `COMMUNITY_REQUEST.md` — detailed optimization request and current failure modes.
 - `.github/ISSUE_TEMPLATE/optimization-request.md` — template for proposed Auto Nest improvements.
-- `SANITIZATION.md` — what was removed/replaced before public sharing.
+- `SANITIZATION.md` — what must be removed/replaced before a full-tool copy is public.
 
-> The original MT-Tool HTML is a large single-file application. Personal contact/donation details and a project-specific cloud endpoint must be sanitized before any full-tool copy is published. This repository is intended to keep the public review surface focused on Adaptive Auto Nest.
+> The original MT-Tool HTML is a large single-file application. Personal contact/donation details and a project-specific cloud endpoint must be sanitized before any full-tool copy is published. This repository intentionally starts with focused Auto Nest code excerpts so community review stays on the algorithm.
 
 ## Non-negotiable validity
 
 A candidate may search aggressively, but an accepted best solution must remain manufacturing-valid: inside stock edge, no illegal overlap, required gap/min-web respected, only allowed rotation/mirroring, correct quantities, and stock order/limits respected.
 
-See the open **Help wanted** issue for the concrete optimization targets and contribution ideas.
+See **Issue #1 — Help wanted: improve Adaptive Auto Nest quality, diversification and last-sheet closure** for the concrete optimization targets and contribution ideas.
