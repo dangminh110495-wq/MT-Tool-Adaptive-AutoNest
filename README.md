@@ -38,12 +38,18 @@ The goal is to improve irregular 2D sheet-metal nesting so the solver keeps gene
 
 - `src/quality-objective.js` — actual T50 quality/scoring comparator excerpt.
 - `src/champion-retention.js` — actual validated best-so-far persistence / safe-partial excerpt.
+- `src/review/exact-validation.js` — final exact manufacturing-validity gate used before accepting candidates.
+- `src/review/true-nfp-contact-core.js` — TRUE-NFP construction/cache, exact pair checking, feasible-region contacts and contact snapping.
+- `src/review/last-sheet-closure-ejection.js` — target-strip removal, last-sheet closure and bounded ejection/reinsertion chain.
+- `src/review/global-portfolio-search.js` — exact pair variants, full-sheet multi-start rebuilding, elite portfolio and champion polish loop.
+- `src/review/master-specialist.js` — worker bridge that seeds local/global TRUE-NFP lanes and only accepts exact-valid quality improvements.
+- `src/review/adaptive-handoff.js` — fast-seed → TRUE-NFP handoff, plateau/hard-cap logic and partial-safe baseline behavior.
 - `docs/CODEMAP.md` — map of the important functions/areas in the original T50 source.
 - `COMMUNITY_REQUEST.md` — detailed optimization request and current failure modes.
 - `.github/ISSUE_TEMPLATE/optimization-request.md` — template for proposed Auto Nest improvements.
 - `SANITIZATION.md` — what must be removed/replaced before a full-tool copy is public.
 
-> The original MT-Tool HTML is a large single-file application. Personal contact/donation details and a project-specific cloud endpoint must be sanitized before any full-tool copy is published. This repository intentionally starts with focused Auto Nest code excerpts so community review stays on the algorithm.
+> Files under `src/review/` are deliberately focused review excerpts rather than standalone modules. They preserve the real T50 algorithmic code while avoiding unrelated UI/application code and public exposure of personal/project-specific data.
 
 ## Non-negotiable validity
 
