@@ -2,6 +2,14 @@
 
 This is a real production-style stress case captured from MT-Tool and intended to test whether Adaptive Auto Nest can escape its current 9-sheet local optimum.
 
+## Visual overview
+
+The screenshot collage below contains the captured T50 progress panel plus the 9 used-sheet views supplied with this benchmark.
+
+![PL-10-Q355B T50 benchmark overview](images/overview.png)
+
+The most important visual signal is sheet 9: the remaining 543 parts occupy only the left portion of the stock, leaving a large clean right-side remnant. The challenge is therefore not cosmetic compaction; it is whether structural relocation can eliminate the ninth sheet entirely.
+
 ## Input
 
 - Task: `PL-10-Q355B`
