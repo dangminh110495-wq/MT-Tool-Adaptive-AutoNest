@@ -1,0 +1,59 @@
+{
+  "caseId": "PL10-Q355B-2526-T50-001",
+  "taskKey": "PL-10-Q355B",
+  "material": "Q355B",
+  "thicknessMm": 10,
+  "partTypes": 366,
+  "totalQty": 2526,
+  "stock": {
+    "lengthMm": 6000,
+    "widthMm": 1500,
+    "availableSheets": 10,
+    "gapMm": 5,
+    "edgeMm": 3
+  },
+  "rules": {
+    "rotationMode": "free",
+    "allowMirror": true,
+    "minWeb": 0,
+    "allowPartInPart": true,
+    "autoRemnant": true,
+    "remMinW": 500,
+    "remMinH": 500
+  },
+  "baseline": {
+    "usedSheets": 9,
+    "placedCount": 2526,
+    "unplacedCount": 0,
+    "sheetPlacedCounts": [64, 192, 225, 228, 254, 306, 300, 414, 543, 0],
+    "lastUsedSheet": 9,
+    "lastSheetMaxXApproxMm": 1864.025,
+    "lastSheetRightRemnantApproxMm": 4135.975,
+    "lastSheetOuterContourAreaApproxM2": 2.16505075,
+    "firstEightOuterContourAreaApproxM2": 60.912488233779,
+    "firstEightAverageOuterContourUtilizationApprox": 0.8460067810,
+    "nineSheetOverallOuterContourUtilizationApprox": 0.7787350492
+  },
+  "capturedRun": {
+    "timeBudgetSec": 225,
+    "observedAtSec": 101.7,
+    "progressPct": 45,
+    "renest": 263,
+    "exact": 27,
+    "bestUpdates": 13,
+    "polish": 10,
+    "uiBestRemainApproxMm": 4130,
+    "uiBestCleanApproxMm": 4171,
+    "runtimeSolverLabel": "T50 · Global champion search · Hybrid Search · exact"
+  },
+  "sourceProject": {
+    "filename": "MT-Nesting-PL-10-Q355B-20260913-1240.mtnest",
+    "savedAt": "2026-09-13T05:40:29.840Z",
+    "projectBuildField": "X6.311-T31.6-JS-AUTONEST-SEEDED-ALNS",
+    "sha256": "69ae18ac6f8afc0eacafa2bfe140909418374a89a3ab4aba1cd3de1f69d40483"
+  },
+  "acceptance": {
+    "primary": "reduce used sheet count below 9 with exact validity",
+    "secondary": "if sheet count remains 9, increase clean/right remnant on sheet 9 without worsening higher-priority objectives"
+  }
+}
